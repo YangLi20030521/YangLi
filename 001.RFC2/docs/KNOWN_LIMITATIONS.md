@@ -1,0 +1,19 @@
+# Known computational and scientific limitations
+
+This is a curated code snapshot, not a completed reanalysis or an end-to-end validated pipeline.
+
+- The stored comparison contains 115 models and eight cohorts, whereas the manuscript described 117. Rankings over all eight stored cohorts do not identify the named StepCox[forward] + Ridge fit as best. A second historical heatmap excludes one cohort. Model selection must be reconciled.
+- Genes were intersected across development and evaluation cohorts. Mean external cohort performance was used in comparison; untouched independent testing has not been demonstrated. Feature selection and preprocessing must be nested within training resampling for an unbiased redevelopment.
+- StepCox forward calls `step()` starting with a full Cox model, not an empty model. Check whether the forward branch actually changes features. The helper's `cv.glmnet` call sets `type.measure="class"` for Cox; check the fitted package's handling of this unsupported measure and record any fallback before reproducing development.
+- Stored C-indices were computed after refitting a Cox model to RS separately within each evaluation cohort. This can reverse score direction. Two cohorts' saved values are complements of concordance calculated with a fixed risk direction. Stored rankings are descriptive only.
+- The coefficient-export code in stage 3 references `beta_matrix` before assignment. This historical bug is retained and can stop a fresh stage execution. The coefficient table audited outside this repository was recovered directly from the saved fit at lambda.min and verified against the saved coefficient table.
+- Score prediction used Cox `type="response"`: RS=exp(X beta). All 1,478 saved scores matched this formula exactly in the local audit. The published input expression scale and upstream normalization still require complete provenance. Do not use arbitrary raw counts or apply an undocumented normalization with the scoring utility.
+- The KM helper creates both cohort-specific optimized cutoffs (`minprop=0.30`) and median splits. Final panel choice must be reconciled; optimizing each test cohort cutoff induces optimism.
+- TCGA model inputs use PFS, other cohorts RFS; variables were temporarily renamed OS in code. They are not interchangeable clinical endpoints. Time units were multiplied by 365 in the original preparation and need source-level confirmation.
+- Single-cell scripts start with externally preprocessed Seurat objects. Complete raw-read QC and annotation provenance is not available here. The detailed trajectory workflow loads GSE137829; this is separate from the GSE181294 discovery analysis. Some subgroup plots compare cells without sample-level dependence adjustment; patient-level inference remains outstanding.
+- SpaCET includes empty cellTypePair placeholders. The spatial accession cannot be verified from the local data path alone.
+- Some scripts depend on interactive state, external services, API resources, optional custom packages, or data/objects not included. Restored functions may depend on globals from the original session; deparsing does not preserve a closed computational environment.
+- Historical workspaces emitted an incomplete compressed data warning during recovery; needed functions and fitted values loaded, but whole-workspace integrity is not guaranteed.
+- Some gene/pathway/drug screens use nominal P values. Comprehensive FDR and confidence intervals, multivariable clinical comparisons, and disease-specific immunotherapy validation remain outstanding. These exploratory results do not establish causal mechanisms, treatment benefit, or clinical utility.
+
+- This code-only distribution does not include data, coefficients, gene sets or audit result tables. Provide or generate them before invoking dependent analyses.

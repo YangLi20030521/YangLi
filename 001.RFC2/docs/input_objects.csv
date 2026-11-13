@@ -1,0 +1,75 @@
+input_key,code_file,input_kind,object_description
+input_001,scripts/01_discovery/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_002,scripts/01_discovery/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_003,scripts/01_discovery/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_004,scripts/01_discovery/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_005,scripts/01_discovery/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_006,scripts/01_discovery/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_007,scripts/01_discovery/helpers.R,in-memory object,read.gmt
+input_008,scripts/01_discovery/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_009,scripts/01_discovery/main.R,named object bundle,symbol.rda
+input_010,scripts/01_discovery/main.R,in-memory object,sc_GSE181294.qs
+input_011,scripts/01_discovery/main.R,in-memory object,GSE111177.qs
+input_012,scripts/01_discovery/main.R,in-memory object,Diff_TCGA_PRAD.qs
+input_013,scripts/01_discovery/main.R,in-memory object,Diff_GSE94767.qs
+input_014,scripts/01_discovery/main.R,in-memory object,pan_TCGA_TIP.qs
+input_015,scripts/01_discovery/main.R,in-memory object,GSE111177.qs
+input_016,scripts/02_subtyping/cluster.R,named object bundle,symbol.rda
+input_017,scripts/02_subtyping/cluster.R,in-memory object,"read.xlsx, candidates.xlsx"
+input_018,scripts/02_subtyping/cluster.R,in-memory object,dat_MOVICS.qs
+input_019,scripts/02_subtyping/preprocess.R,named object bundle,symbol.rda
+input_020,scripts/02_subtyping/preprocess.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_021,scripts/02_subtyping/preprocess.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_022,scripts/02_subtyping/preprocess.R,in-memory object,Diff_TCGA_PRAD.qs
+input_023,scripts/02_subtyping/preprocess.R,in-memory object,gencode.v48.basic.annotation.gtf
+input_024,scripts/02_subtyping/preprocess.R,in-memory object,"mc3_gene_level_PRAD_mc3_gene_level.txt, PRAD_mc3_gene_level.txt"
+input_025,scripts/03_modeling/main.R,named object bundle,symbol.rda
+input_026,scripts/03_modeling/main.R,in-memory object,"read.xlsx, candidates.xlsx"
+input_027,scripts/04_clinical/main.R,named object bundle,symbol.rda
+input_028,scripts/04_clinical/main.R,named object bundle,Cell-infiltration-list.rda
+input_029,scripts/04_clinical/main.R,in-memory object,res_model.qs
+input_030,scripts/04_clinical/main.R,in-memory object,"read.xlsx, candidates.xlsx"
+input_031,scripts/04_clinical/main.R,in-memory object,GSE111177.qs
+input_032,scripts/04_clinical/main.R,in-memory object,pan_TCGA_TIP.qs
+input_033,scripts/04_clinical/main.R,named object bundle,BLCA_IMVigor210.RDS
+input_034,scripts/04_clinical/main.R,named object bundle,BLCA_GSE176307.RDS
+input_035,scripts/04_clinical/main.R,named object bundle,STAD_PRJEB25780.RDS
+input_036,scripts/04_clinical/main.R,in-memory object,"read.xlsx, icd_genes.xlsx"
+input_037,scripts/04_clinical/main.R,in-memory object,GSE97284.qs
+input_038,scripts/05_gene_screen/main.R,in-memory object,CRISPRGeneDependency.csv
+input_039,scripts/05_gene_screen/main.R,in-memory object,CRISPRGeneEffect.csv
+input_040,scripts/05_gene_screen/main.R,in-memory object,Model.csv
+input_041,scripts/05_gene_screen/main.R,in-memory object,OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv
+input_042,scripts/05_gene_screen/main.R,in-memory object,res_model.qs
+input_043,scripts/06_rfc2_bulk/cancersea.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_044,scripts/06_rfc2_bulk/helpers.R,in-memory object,pan_TCGA_fpkm.qs
+input_045,scripts/06_rfc2_bulk/main.R,named object bundle,symbol.rda
+input_046,scripts/06_rfc2_bulk/main.R,in-memory object,Diff_TCGA_PRAD.qs
+input_047,scripts/06_rfc2_bulk/main.R,in-memory object,GSE46602.qs
+input_048,scripts/06_rfc2_bulk/main.R,in-memory object,GSE46602.qs
+input_049,scripts/07_rfc2_spatial/main.R,in-memory object,sc_GSE137829.qs
+input_050,scripts/07_rfc2_spatial/main.R,in-memory object,sc_GSE141445.qs
+input_051,scripts/07_rfc2_spatial/main.R,in-memory object,sc_GSE181294.qs
+input_052,scripts/07_rfc2_spatial/main.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_053,scripts/08_drug_response/main.R,named object bundle,Drugdata.rda
+input_054,scripts/08_drug_response/main.R,in-memory object,res_model.qs
+input_055,scripts/09_cell_states/helpers.R,named object bundle,CellType_Bindea2013_cancer.rda
+input_056,scripts/09_cell_states/helpers.R,named object bundle,Charoentong2017.rda
+input_057,scripts/09_cell_states/helpers.R,named object bundle,CellType_Newman2015_LM22.rda
+input_058,scripts/09_cell_states/helpers.R,named object bundle,Xu2018.rda
+input_059,scripts/09_cell_states/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_060,scripts/09_cell_states/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_061,scripts/09_cell_states/helpers.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_062,scripts/09_cell_states/main.R,in-memory object,sc_GSE137829.qs
+input_063,scripts/09_cell_states/main.R,in-memory object,seurat.rds
+input_064,scripts/09_cell_states/main.R,in-memory object,sc_GSE137829.qs
+input_065,scripts/09_cell_states/main.R,in-memory object,Preprocessed object or resource expected by the analysis; see code context
+input_066,scripts/09_cell_states/timigp.R,named object bundle,symbol.rda
+input_067,scripts/09_cell_states/timigp.R,in-memory object,res_model.qs
+input_068,R/historical_helpers.R,named object bundle,CellType_Bindea2013_cancer.rda
+input_069,R/historical_helpers.R,named object bundle,CellType_Charoentong2017_Bindea2013_Xu2018_Immune.rda
+input_070,R/historical_helpers.R,named object bundle,CellType_Newman2015_LM22.rda
+input_071,R/historical_helpers.R,in-memory object,Human_cell_markers.txt
+input_072,R/historical_helpers.R,in-memory object,Mouse_cell_markers.txt
+input_073,R/historical_helpers.R,in-memory object,Human_cell_markers.txt
+input_074,R/historical_helpers.R,in-memory object,Mouse_cell_markers.txt

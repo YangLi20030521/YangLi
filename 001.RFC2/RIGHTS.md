@@ -1,0 +1,5 @@
+# Rights and attribution
+
+No blanket open-source license is assigned in this snapshot because ownership and redistribution permission for recovered custom functions and external gene sets have not been established. Authors should choose an appropriate license for code they own before public release and verify rights for third-party material. Original ownership and attribution obligations are unchanged; source provenance and the pre-cleanup snapshot retain the historical attribution record. Formatting and privacy edits do not establish permission to redistribute third-party code. Dependencies, CancerSEA signatures and external databases remain subject to their upstream terms; their inclusion here does not relicense them.
+
+Do not describe this repository as licensed under MIT or another open-source license until the rights holders approve that license. Citation metadata and a permanent DOI can be added after authors confirm the publication title, contributor list and archive record.

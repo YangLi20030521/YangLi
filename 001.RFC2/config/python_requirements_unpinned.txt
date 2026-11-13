@@ -1,0 +1,6 @@
+# Static imports only; versions and full transitive environment were not preserved.
+# This is not a historical environment lock file.
+cellphonedb
+ipython
+pandas
+scMalignantFinder
